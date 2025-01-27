@@ -9,7 +9,7 @@ export function Field({name, labelText=''}) {
       {labelText}
     </label>
     <br />
-    <input type='text' name={name}/>
+    <input type='text' name=     {name}/>
   </div> 
   )
 }
@@ -18,3 +18,5 @@ Field.propTypes = {
   name: string.isRequired,
   labelText: string
 }
+
+export default Field
