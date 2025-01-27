@@ -1,16 +1,15 @@
+import { React } from 'react'
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
-import { Field } from './Components/inputField.jsx';
-import InputDisplay from './inputDisplay';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Field name='button' labelText='new button & label' /> */}
-    <InputDisplay />
+    <App/>
   </StrictMode>
 );
+
 
 // import GeneralInfo from './Components/general_info.jsx'
 // import CV from './Components/cv.jsx'

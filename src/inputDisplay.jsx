@@ -1,17 +1,10 @@
-import { useState } from 'react';
-
-function InputDisplay() {
-  const [input, setInput] = useState('');
-
-  const changeText = (event) => {
-    setInput(event.target.value);
-  };
-
+function InputDisplay({ func, value }) {
   return (
     <div>
-      <input value={input} onChange={changeText} />
-      <p>{input}</p>
+      <h1>Hello</h1>
+      <input value={value} onInput={(event) => func(event.target.value)} />
     </div>
   );
 }
+
 export default InputDisplay;
